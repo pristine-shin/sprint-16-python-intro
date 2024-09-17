@@ -2,6 +2,8 @@
 # the `and` operator being applied to the function's arguments.
 
 # Write your function here.
+def And(arg1, arg2):
+    return arg1 and arg2
 
 
 print(And(True, False))    #> False

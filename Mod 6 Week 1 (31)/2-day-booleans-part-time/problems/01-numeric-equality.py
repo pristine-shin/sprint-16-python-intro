@@ -2,11 +2,11 @@
 # otherwise return `False`.
 
 # Write your function here.
-def is_same_num(num1, num2)
-  if (int(num1) === int(num2))
-    return True
-  else
-    return False
+def is_same_num(num1, num2):
+    if num1 == num2:
+        return True
+    else:
+        return False
 
 
 print(is_same_num(4, 8))   #>  False
