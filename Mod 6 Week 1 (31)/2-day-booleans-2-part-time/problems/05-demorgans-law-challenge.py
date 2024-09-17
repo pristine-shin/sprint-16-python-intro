@@ -2,6 +2,8 @@
 # statement.
 
 # Write your function here.
+def de_morgans_law(arg1, arg2):
+    return not(arg1 and arg2)
 
 
 print(de_morgans_law(True, True)) # False

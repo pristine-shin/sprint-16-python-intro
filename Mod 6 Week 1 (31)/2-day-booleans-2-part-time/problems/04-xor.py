@@ -5,6 +5,8 @@
 # https://wiki.python.org/moin/BitwiseOperators
 
 # Write your function here.
+def xor(arg1, arg2):
+    return arg1 ^ arg2
 
 
 print(xor(False, False))   #>  False

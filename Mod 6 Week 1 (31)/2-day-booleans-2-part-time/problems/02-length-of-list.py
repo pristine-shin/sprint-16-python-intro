@@ -2,7 +2,11 @@
 # the given value; otherwise return `False`.
 
 # Write your function here.
-
+def length_list(list, length):
+    if (len(list) == length):
+        return True
+    else:
+        return False
 
 print(length_list([], 1))   #>  False
 print(length_list([], 0))   #>  True
