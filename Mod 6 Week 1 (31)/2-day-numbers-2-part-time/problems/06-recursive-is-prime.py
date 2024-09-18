@@ -4,6 +4,20 @@
 
 # Write your solution here.
 
+def is_prime(num):
+    if num == 1:
+        return False
+    if num == 2:
+        return True
+    if num == 3:
+        return True
+    for x in range(3,num):
+        if num % x == 0:
+            return False
+        else:
+            return True
+
+
 
 print(is_prime(1))  #> False
 print(is_prime(2))  #> True

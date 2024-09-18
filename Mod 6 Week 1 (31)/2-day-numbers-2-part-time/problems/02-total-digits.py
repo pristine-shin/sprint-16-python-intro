@@ -2,7 +2,8 @@
 # of digits it has.
 
 # Write your function here.
-
+def find_digit_amount(num):
+    return len(str(num))
 
 print(find_digit_amount(123))           #> 3
 print(find_digit_amount(-56))           #> 2
