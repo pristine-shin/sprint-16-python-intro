@@ -3,7 +3,8 @@
 # your function.
 
 # Write your function here.
-
+def calculate_exponent(base, exp):
+  return base ** exp
 
 print(calculate_exponent(5, 5))     #> 3125
 print(calculate_exponent(10, 10))   #> 10000000000

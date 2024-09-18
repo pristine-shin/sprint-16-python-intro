@@ -8,6 +8,15 @@
 # https://docs.python.org/3.9/library/stdtypes.html?highlight=strings#string-methods
 
 # Write your function here.
+def first_before_second(str, char1, char2):
+  firstIdx = str.find(char1)
+  secondIdx = str.find(char2)
+  print(secondIdx)
+  if firstIdx == -1:
+    return True
+  if secondIdx == -1:
+    return True
+  return firstIdx < secondIdx
 
 
 print(first_before_second("a rabbit jumps joyfully", "a", "j"))
@@ -23,4 +32,3 @@ print(first_before_second("happy birthday", "a", "y"))
 
 print(first_before_second("precarious kangaroos", "k", "a"))
 #> False
-
