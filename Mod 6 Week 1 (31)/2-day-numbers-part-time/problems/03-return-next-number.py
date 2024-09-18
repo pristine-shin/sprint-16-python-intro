@@ -3,7 +3,9 @@
 # body of your function.
 
 # Write your function here.
-
+def increment(num):
+    num += 1
+    return num
 
 print(increment(0))   #> 1
 print(increment(9))   #> 10
