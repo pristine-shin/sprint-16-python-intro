@@ -3,6 +3,11 @@
 # case).
 
 # Write your function here.
+def last_three(str, end):
+  newStr = str.lower()
+  newEnd = end.lower()
+
+  return newStr[-3:] == newEnd
 
 
 print(last_three("Power", "wer"))  #> True

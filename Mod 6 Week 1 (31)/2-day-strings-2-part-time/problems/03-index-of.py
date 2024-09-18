@@ -1,6 +1,9 @@
 # Create a function that returns the index of a given letter in the string.
 
 # Write your function here.
+def index_of(str, char):
+  strCopy = str.lower()
+  return strCopy.index(char)
 
 
 print(index_of("Arm", "a"))  #> 0
