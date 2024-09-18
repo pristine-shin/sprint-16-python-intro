@@ -2,9 +2,9 @@
 # format "last, first".
 
 # Write your function here.
-
+def concat_name(firstName, lastName):
+    return lastName + ", " + firstName
 
 print(concat_name("First", "Last"))  #> "Last, First"
 print(concat_name("John", "Doe"))    #> "Doe, John"
 print(concat_name("Mary", "Jane"))   #> "Jane, Mary"
-
