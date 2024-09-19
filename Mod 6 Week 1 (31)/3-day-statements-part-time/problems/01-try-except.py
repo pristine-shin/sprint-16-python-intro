@@ -7,11 +7,15 @@ try:
     str = 'hello'
     str[0] = 'm'
     print(str)
+except TypeError as e:
+    print(e, "Strings are immutable")
 finally:
     print('I happen regardless of any exceptions.')
 
 # Example 2
 try:
     print(x)
+except NameError:
+    print("you just got a name error")
 finally:
     print('I happen regardless of any exceptions.')

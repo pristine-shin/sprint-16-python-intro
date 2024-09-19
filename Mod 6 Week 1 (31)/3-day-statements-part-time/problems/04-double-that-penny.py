@@ -13,7 +13,9 @@ count = 0
 total = 0
 
 # STEP 2: Write the while loop
-
+while total < 1000000:
+  count = count + 1
+  total = 2**count
 
 print('Double', count, 'times')
 
