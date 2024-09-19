@@ -14,4 +14,3 @@ print(x is x)
 # 1. x with itself
 # 2. x with y
 # 3. list1 with list2
-
