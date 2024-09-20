@@ -4,9 +4,9 @@
 # arguments' declaration and see what happens!
 
 # Write your code here.
-
+def sample_function(arg1, arg2, arg3):
+    print(arg1, arg2, arg3)
 
 sample_function(input = "asdf", "a", "b")      # ERROR
 sample_function("asdf", input = "a", "b")      # ERROR
 sample_function("asdf", "a", input = "b")      # VALID
-
