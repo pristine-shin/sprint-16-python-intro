@@ -2,7 +2,13 @@
 # uppercase characters in the string.
 
 # Write your solution here.
+def add_upper(str):
+    result = ''
+    for i in str:
+        if i.isupper():
+            result = result + i
 
+    return result
 
 print(add_upper("ApPlE"))        #> APE
 print(add_upper("Coding"))       #> C

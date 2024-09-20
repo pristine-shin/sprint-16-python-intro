@@ -5,7 +5,12 @@
 # from A-F. All alphabetic characters may be uppercase or lowercase.
 
 # Write your function here.
+def is_valid_hex_code(str):
+    cond1 = str.startswith("#")
+    cond2 = len(str) == 7
+    cond3 = str[1:].isalnum()
 
+    return cond1 and cond2 and cond3
 
 print(is_valid_hex_code("#CD5C5C"))  #> True
 print(is_valid_hex_code("#EAECEE"))  #> True

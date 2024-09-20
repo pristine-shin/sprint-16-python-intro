@@ -15,7 +15,20 @@
 
 # Write your function here.
 # There are hints after the print statements
+def seq_of_numbers(numStr):
+    numStr = numStr + ' '
+    result = ''
+    idx = 0
+    count = 1
 
+    for idx in range(len(numStr) - 1):
+        if numStr[idx] != numStr[idx + 1]:
+            result = result + str(count) + numStr[idx]
+            count = 1
+        else:
+            count += 1
+
+    return result
 
 print(seq_of_numbers("1211"))
 # This is "one 1, one 2, two 1s"
@@ -35,12 +48,12 @@ print(seq_of_numbers("31131211131221"))
 # An algorithm for performing this without a data structure
 # means you have to think about what you're trying to look
 # for.
- 
+
 # If you scan the string two characters at a time, when they
 # change, you know that you have started a new sequence of
 # numbers. You can add the current number of characters that
 # you've scanned to a result.
- 
+
 # For example, say you had "111221". You would start the
 # count at 1 and compare the characters at indices 0 and 1.
 # Since they are the same, you would increment the current
