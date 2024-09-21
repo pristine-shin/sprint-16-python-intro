@@ -1,5 +1,5 @@
 # Recall the merge sort algorithm:
-    
+
 # 1. Find midpoint to divide list in half
 # 2. Call `merge_sort` recursively on the first half
 # 3. Call `merge_sort` recursively on the second half
