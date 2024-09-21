@@ -2,6 +2,12 @@
 # the list.
 
 # Write your function here.
+def get_indices(list, item):
+    result = []
+    for i in range(len(list)):
+        if list[i] == item:
+            result.append(i)
+    return result
 
 print(get_indices(["a", "a", "b", "a", "b", "a"], "a"))
 # Prints [0, 1, 3, 5]

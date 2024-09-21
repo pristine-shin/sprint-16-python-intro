@@ -2,6 +2,10 @@
 # and the last value of the second list.
 
 # Write your function here.
+def sum_first_last_list(list1, list2):
+    first = list1[0]
+    last = list2[-1]
+    return first + last
 
 print(sum_first_last_list([1, 2, 3], [5, 8, 9]))     #> 10
 print(sum_first_last_list([53, 26], [5]))            #> 58
