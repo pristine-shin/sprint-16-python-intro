@@ -3,7 +3,7 @@
 
 # Write your function here.
 def dictionary_pairs(key, value):
-  return 
+  return dict((k.capitalize(), v) for k, v in zip(key, value))
 
 print(dictionary_pairs(["name", "age", "food"], ["James", 24, "steak"])) #> {'Name': 'James', 'Age': 24, 'Food': 'steak'}
 print(dictionary_pairs(["name", "age", "food"], ["Vivian", 21, "sushi"])) #> {'Name': 'Vivian', 'Age': 21, 'Food': 'sushi'}
