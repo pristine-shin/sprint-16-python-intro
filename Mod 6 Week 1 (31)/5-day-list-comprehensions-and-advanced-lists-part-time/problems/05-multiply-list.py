@@ -2,6 +2,8 @@
 # the values in the first list multiplied by all the values in the second list.
 
 # Write your function here.
+def multiply_lists(list1, list2):
+  return [a * b for a in list1 for b in list2]
 
 print(multiply_lists([1, 2 ,3], [1, 5, 7])) #> [1, 5, 7, 2, 10, 14, 3, 15, 21]
 print(multiply_lists([5, 6 ,2], [1, 4, 3])) #> [5, 20, 15, 6, 24, 18, 2, 8, 6]

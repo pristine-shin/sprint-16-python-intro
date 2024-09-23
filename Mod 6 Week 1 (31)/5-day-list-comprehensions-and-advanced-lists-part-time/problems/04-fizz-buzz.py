@@ -3,6 +3,8 @@
 # done in a single line of code.
 
 # Write your function here.
+def fizzbuzz(lst):
+  return [n for n in lst if n % 3 == 0 and n % 5 == 0]
 
 print(fizzbuzz([15, 5, 10, 30])) #> [15, 30]
 print(fizzbuzz([60, 20, 90, 20])) #> [60, 90]

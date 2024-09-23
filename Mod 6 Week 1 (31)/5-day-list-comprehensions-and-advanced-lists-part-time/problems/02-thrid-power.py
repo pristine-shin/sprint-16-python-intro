@@ -3,6 +3,8 @@
 # using list comprehensions.
 
 # Write your function here.
+def third(lst):
+  return [i**3 for i in lst]
 
 print(third([2, 4, 8])) #> [8, 64, 512]
 print(third([3, 5, 6])) #> [27, 125, 216]

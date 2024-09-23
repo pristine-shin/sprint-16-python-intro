@@ -4,6 +4,10 @@
 # with 0. Hint: This can be done in a single line of code.
 
 # Write your function here.
+def gas_prices(prices, val):
+  new_prices = [p if p > val else 0 for p in prices]
+  return new_prices
+
 
 print(gas_prices([2.55, -1.45, 10.22, 5.78, -5.92, 6.16], 3.99)) #> [0, 0, 10.22, 5.78, 0, 6.16]
 print(gas_prices([5.95, 6.62, 2.22, 6.78, 8.92, 7.03], 2.50)) #> [5.95, 6.62, 0, 6.78, 8.92, 7.03]
