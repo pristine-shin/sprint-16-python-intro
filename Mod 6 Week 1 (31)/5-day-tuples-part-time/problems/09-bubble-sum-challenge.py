@@ -2,6 +2,8 @@
 # the tuples. Hint: use the built-in range function.
 
 # Write your function here.
+def bubble_sum(lst):
+    return sorted(lst, key=lambda x: sum(x))
 
 print(bubble_sum([(3, 5), (1, 3), (6, 5), (2, 8)])) #> [(1, 3), (3, 5), (2, 8), (6, 5)]
 print(bubble_sum([(2, 5), (2, 5), (7, 8), (2, 6)])) #> [(2, 5), (2, 5), (2, 6), (7, 8)]
