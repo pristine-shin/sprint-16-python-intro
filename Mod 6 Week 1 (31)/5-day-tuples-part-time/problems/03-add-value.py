@@ -3,6 +3,11 @@
 # tuple.
 
 # Write your function here.
+def add_value(tup, val):
+  tup += (val,)
+  return tup
+
+# you can also convert it to a list and then back to a tuple
 
 print(add_value((1,2,3,4), 5)) #> (1, 2, 3, 4, 5)
 print(add_value(("a", "b", "c"), "d")) #> ('a', 'b', 'c', 'd')
