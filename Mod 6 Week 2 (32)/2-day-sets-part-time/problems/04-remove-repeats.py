@@ -3,7 +3,7 @@
 
 # Write your code here.
 def remove_repeats(str1, str2):
-    pass
+    return set(str1) ^ set(str2)
 
 str1 = 'aloha'
 str2 = 'bonjour'

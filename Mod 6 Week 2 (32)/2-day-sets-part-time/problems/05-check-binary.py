@@ -4,7 +4,10 @@
 
 # Write your code here.
 def check_binary(str):
-    pass
+    b = set(str)
+    # print(b)
+    s = {'0', '1'}
+    return s == b or b == {'0'} or b == {'1'}
 
 str1 = '1010001010010100101'
 str2 = '1010010015010101010'
