@@ -43,7 +43,11 @@ teachers = [
 
 # Write your code here.
 def sort_teachers_by_classroom_capacity(card_list):
-    pass
+    newList = sorted(card_list, key=lambda x: x["classroom"]["capacity"])
+    result = []
+    for list in newList:
+        result.append(list["name"])
+    return result
 
-print(sort_teachers_by_classroom_capacity(teachers)) 
+print(sort_teachers_by_classroom_capacity(teachers))
 # Richly Emiardson, Emily Richardson, Richard Emilyson

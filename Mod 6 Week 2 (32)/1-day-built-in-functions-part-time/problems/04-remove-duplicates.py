@@ -43,10 +43,16 @@ phones = [
 
 # Write your code here.
 def get_unique_models(phone_list):
-    pass
+    models = []
+    res = []
+    for phone in phone_list:
+        if phone["model"] not in models:
+            models.append(phone["model"])
+            res.append(phone)
+    return res
 
 def map_to_names(phone_list):
-    pass
+    return list(map(lambda phone: phone["model"], phone_list))
 
 unique_models = list(get_unique_models(phones))
 print(unique_models)                # iPhone 13 Pro, Galaxy S22+, Pixel 6 (dictionaries)
