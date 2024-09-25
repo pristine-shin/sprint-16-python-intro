@@ -2,6 +2,8 @@
 # key, and `False` otherwise.
 
 # Write your function here.
+def has_key(dictionary, key):
+  return (key in dictionary)
 
 print(has_key({ "a": 44, "b": 45, "c": 46 }, "d"))
 # False

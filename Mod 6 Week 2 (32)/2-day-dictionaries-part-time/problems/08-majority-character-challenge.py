@@ -4,6 +4,8 @@
 # length of the string.
 
 # Write your code here.
+def majority_char(string):
+  n = len(string)
 
 str = 'all'
 str2 = 'welcome to the jungle'

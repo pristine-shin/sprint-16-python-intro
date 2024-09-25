@@ -5,7 +5,11 @@
 
 # Write your code here.
 def concatenate_dictionaries(lst):
-    pass
+    result = {}
+    for dictionary in lst:
+        for k, v in dictionary.items():
+            result[k] = v
+    return result
 
 lst = [
     {
@@ -23,7 +27,7 @@ lst = [
 
 print(concatenate_dictionaries(lst))
 """
-Prints: 
+Prints:
 {
     'a': 'this',
     'b': 'is',
