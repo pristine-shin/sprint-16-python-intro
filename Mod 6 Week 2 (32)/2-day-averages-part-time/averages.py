@@ -42,18 +42,37 @@
 #    - median (center point)
 #    - mode (most repeated)
 def analyze(nums):
-    return()
+    return (min(nums), max(nums), sum(nums)/len(nums), median(nums), mode(nums))
 
 # STEP 2: Complete median function to return center number
-#         WITHOUT using built-in function
+#         WITHOUT using built-in function below
+import statistics
+    # return(statistics.median(nums))
+import math
+
 def median(nums):
-    return()
+    sortedNums = sorted(nums)
+    midIdx = math.floor(len(nums)/2)
+    # print(midIdx)
+    if len(nums) % 2 == 0:
+        return (sortedNums[midIdx] + sortedNums[midIdx - 1])/2
+    else:
+        return sortedNums[midIdx]
 
 # STEP 3: Complete mode function to return most-repeated number
 #         WITHOUT using built-in function
+    # return statistics.mode(nums)
 # BONUS B: Catch special case where more than one value repeats the most
 def mode(nums):
-    return
+    freq = {}
+    for num in nums:
+        if not num in freq:
+            freq[num] = 1
+        else:
+            freq[num] += 1
+    for (n, count) in freq.items():
+        
+
 
 # DO NOT EDIT - sample data for checking your work
 sample1 = 1,2,3,4,5,6,7,8,9
