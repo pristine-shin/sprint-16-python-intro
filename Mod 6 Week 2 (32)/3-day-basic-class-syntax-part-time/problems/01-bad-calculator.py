@@ -1,5 +1,5 @@
 # Implement a class called `BadCalculator` that contains:
- 
+
 # 1. A constructor that takes in two values and initializes two instance
 #    properties: num1 and num2
 
@@ -14,11 +14,30 @@
 #    second, and return a string explaining that it cannot perform this
 #    operation if it is asked to divide by zero.
 
-# 5. A __repr__ method that returns the string: 
+# 5. A __repr__ method that returns the string:
 #   "<Bad Calculator - can only do {num1}*{num2} and {num1}/{num2}>"
 
 # Declare your class here
+class BadCalculator:
+    def __init__(self, num1, num2):
+        self._num1 = num1
+        self._num2 = num2
 
+    def change_nums(self, new_num1, new_num2):
+        self._num1 = new_num1
+        self._num2 = new_num2
+
+    def mult_nums(self):
+        return self._num1 * self._num2
+
+    def div_nums(self):
+        if not self._num2 == 0:
+          return self._num1 / self._num2
+        else:
+          return "Sorry, I cannot divide by zero"
+
+    def __repr__(self):
+       return f'<Bad Calculator - can only do {self._num1}*{self._num2} and {self._num1}/{self._num2}>'
 
 pair_1 = BadCalculator(15, 3)
 print(pair_1) # <Bad Calculator - can only do 15*3 and 15/3>
