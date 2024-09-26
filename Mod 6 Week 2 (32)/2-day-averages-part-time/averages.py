@@ -70,8 +70,13 @@ def mode(nums):
             freq[num] = 1
         else:
             freq[num] += 1
-    for (n, count) in freq.items():
-        
+    highestFreq = max(freq.values())
+    if highestFreq == 1:
+        return None
+    else:
+        for (n, f) in freq.items():
+            if f == highestFreq:
+                return n
 
 
 # DO NOT EDIT - sample data for checking your work
