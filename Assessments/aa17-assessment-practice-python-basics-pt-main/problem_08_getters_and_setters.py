@@ -26,19 +26,41 @@
 #
 # *NOTE: Include the angle brackets in the above format.
 #
-# In addition to running `pytest test/test_problem_04_getters_and_setters.py` you can also
+# In addition to running `pytest test/test_problem_08_getters_and_setters.py` you can also
 # test your code manually using the sample data below.
 #
 #______________________________YOUR CODE BELOW______________________________#
 
 
-# Your code here 
+# Your code here
+class Wizard:
+    def __init__(self, name, magic = "Light", level = 0):
+        if magic == "Light" or "Dark":
+            self._magic = magic
+        else:
+            self._magic = "Light"
 
+        self._name = name
+        self._level = level
+
+    @property
+    def level(self):
+        return self._level
+
+    @level.setter
+    def level(self, l):
+        if 0 <= l <= 100:
+            self._level = l
+        else:
+            raise ValueError("Level outside of range 0-100.")
+
+    def __repr__(self):
+        return f"<{self._name} is a level {self._level} {self._magic} Wizard>"
 
 # __________SAMPLE TEST DATA__________ #
-# gandalf = Wizard("Gandalf", level=10, magic="Dark")
+gandalf = Wizard("Gandalf", level=10, magic="Dark")
 
-# print(gandalf.level)      # 10
-# gandalf.level = 15
-# print(gandalf.level)      # 15
-# print(gandalf)            # <Gandalf is a level 15 Dark Wizard>
+print(gandalf.level)      # 10
+gandalf.level = 15
+print(gandalf.level)      # 15
+print(gandalf)            # <Gandalf is a level 15 Dark Wizard>

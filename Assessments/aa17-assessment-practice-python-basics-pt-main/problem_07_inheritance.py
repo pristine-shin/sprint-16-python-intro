@@ -27,18 +27,32 @@
 #     "{name}'s {wings} wings launch it into the air, creating a powerful blast of wind that knocks you over."
 #
 #
-# In addition to running `pytest test/test_problem_03_inheritance.py` you can also
+# In addition to running `pytest test/test_problem_07_inheritance.py` you can also
 # test your code manually using the sample data below.
 #
 #______________________________YOUR CODE BELOW______________________________#
 
 
-# Your code here 
+# Your code here
+from problem_06_class import Dragon
 
+class FlyingDragon(Dragon):
+    def __init__(self, name, color, is_good=True, wings = 'massive'):
+        super().__init__(name, color, is_good)
+        self._wings = wings
+
+    def encounter(self):
+        if self._is_good == True:
+            return f"While traveling you suddenly meet a flying dragon named {self._name}! It lets you take a selfie and admire its {self._color} scales."
+        else:
+            return f"While traveling you suddenly meet a flying dragon named {self._name}! {self.breathes_fire()}"
+
+    def fly(self):
+        return f"{self._name}'s {self._wings} wings launch it into the air, creating a powerful blast of wind that knocks you over."
 
 # __________SAMPLE TEST DATA__________ #
-# test_dragon = FlyingDragon("Smaug","black", is_good=False, wings="towering")
+test_dragon = FlyingDragon("Smaug","black", is_good=False, wings="towering")
 
-# print(isinstance(test_dragon, Dragon))        # True
-# print(test_dragon.encounter())                # While traveling you suddenly meet a flying dragon named Smaug! Smaug breathes fire everywhere! BURN!!!
-# print(test_dragon.fly())                      # Smaug's towering wings launch it into the air, creating a powerful blast of wind that knocks you over.
+print(isinstance(test_dragon, Dragon))        # True
+print(test_dragon.encounter())                # While traveling you suddenly meet a flying dragon named Smaug! Smaug breathes fire everywhere! BURN!!!
+print(test_dragon.fly())                      # Smaug's towering wings launch it into the air, creating a powerful blast of wind that knocks you over.

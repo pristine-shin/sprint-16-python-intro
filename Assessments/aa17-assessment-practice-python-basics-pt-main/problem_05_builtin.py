@@ -7,14 +7,15 @@
 # * NOTE: You must use the builtin "filter" method in your function.
 #
 #
-# In addition to running `pytest test/test_problem_01_builtin.py` you can also
+# In addition to running `pytest test/test_problem_05_builtin.py` you can also
 # test your code manually using the sample data below.
 #
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
-
+def filter_small_lists(nestedLst):
+    return list(filter(lambda x: len(x) > 2, nestedLst))
 
 # __________SAMPLE TEST DATA__________ #
-# print(filter_small_lists([[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]))     # [[1, 2, 3], [1, 2, 3, 4]]
-# print(filter_small_lists([]))                                         # []
+print(filter_small_lists([[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]))     # [[1, 2, 3], [1, 2, 3, 4]]
+print(filter_small_lists([]))                                         # []

@@ -104,13 +104,21 @@ from random import randint
 # You're finished! 😅
 #
 #
-# In addition to running `pytest test/test_problem_05_functions.py` you can also
+# In addition to running `pytest test/test_problem_09_functions.py` you can also
 # test your code manually using the sample data below.
 #
 #______________________________YOUR CODE BELOW______________________________#
 
 
-# Your code here 
+# Your code here
+class PizzaProcessor:
+    def __init__(self):
+        self._error = "Invalid data: please check your data types before proceeding."
+        self._pizzas_made = 0
+
+    @property
+    def pizzas_made(self):
+        return self._pizzas_made
 
 
 # __________SAMPLE TEST DATA__________ #
