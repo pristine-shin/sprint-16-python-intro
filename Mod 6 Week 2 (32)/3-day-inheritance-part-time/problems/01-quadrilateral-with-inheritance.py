@@ -14,7 +14,19 @@
 # instance properties from the Quadrilateral class's constructor method.
 
 # Write your class here.
+class Quadrilateral:
+  def __init__(self, length, width):
+    self.length = length
+    self.width = width
 
+class Square(Quadrilateral):
+  def __init__(self, length, width):
+    super().__init__(length, width)
+    if length == width:
+      self.length = length
+      self.width = width
+    else:
+      raise Exception("A square must have an equal length and width.")
 
 
 quad = Quadrilateral(20, 10)
