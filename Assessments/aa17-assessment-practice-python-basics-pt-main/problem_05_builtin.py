@@ -12,7 +12,8 @@
 #
 #______________________________YOUR CODE BELOW______________________________#
 
-# Your code here 
+# Your code here
+
 
 # __________SAMPLE TEST DATA__________ #
 # print(filter_small_lists([[1], [1, 2], [1, 2, 3], [1, 2, 3, 4]]))     # [[1, 2, 3], [1, 2, 3, 4]]

@@ -16,10 +16,12 @@
 #
 #  ______________________________YOUR CODE BELOW______________________________#
 
-# Your code here 
+# Your code here
+def comprehension_sort(lst):
+    return ([num for num in lst if num % 2 != 0], [num for num in lst if num % 2 == 0])
 
 # __________SAMPLE TEST DATA__________ #
-# lst1 = [1, 2, 4, 5, 7, 9]
-# print(comprehension_sort(lst1))    # ([1, 5, 7, 9], [2, 4])
-# lst2 = [33, 2, 46, 17, 19, 53, 88]
-# print(comprehension_sort(lst2))    # ([33, 17, 19, 53], [2, 46, 88])
+lst1 = [1, 2, 4, 5, 7, 9]
+print(comprehension_sort(lst1))    # ([1, 5, 7, 9], [2, 4])
+lst2 = [33, 2, 46, 17, 19, 53, 88]
+print(comprehension_sort(lst2))    # ([33, 17, 19, 53], [2, 46, 88])

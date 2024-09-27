@@ -16,6 +16,7 @@
 # Write your class here.
 
 
+
 quad = Quadrilateral(20, 10)
 print(f"{quad.length}, {quad.width}") # 20, 10
 
