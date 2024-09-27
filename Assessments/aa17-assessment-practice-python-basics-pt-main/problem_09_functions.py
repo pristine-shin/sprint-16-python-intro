@@ -120,6 +120,18 @@ class PizzaProcessor:
     def pizzas_made(self):
         return self._pizzas_made
 
+    def pizza_pick(self, arg1, arg2, arg3):
+        if isinstance(arg1, str) and isinstance(arg2, str) and arg2.islower() and isinstance(arg3, int) and 0 < arg3 < 10:
+            return f"{arg1} ordered a {arg2} crust pizza with {arg3} toppings!"
+        else:
+            return self._error
+
+    def pizza_production(self, **kwargs):
+        self._time_started = kwargs['time_started']
+        self._time_ended = kwargs['time_ended']
+        self._employee_name = kwargs['employee_name']
+
+        
 
 # __________SAMPLE TEST DATA__________ #
 # pizza_processor = PizzaProcessor()
