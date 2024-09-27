@@ -131,7 +131,7 @@ class PizzaProcessor:
             self._time_started = None
             self._time_ended = None
             self._employee_name = None
-        elif
+        elif 
         else:
             self._time_started = kwargs['time_started']
             self._time_ended = kwargs['time_ended']
