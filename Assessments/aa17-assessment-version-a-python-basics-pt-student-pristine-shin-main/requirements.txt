@@ -1,0 +1,21 @@
+-i https://pypi.org/simple
+attrs==19.3.0
+more-itertools==8.3.0
+py==1.8.1
+pyparsing==2.4.7
+six==1.15.0
+wcwidth==0.2.3
+certifi==2023.11.17
+distlib==0.3.7
+exceptiongroup==1.2.0
+filelock==3.13.1
+iniconfig==2.0.0
+packaging==23.2
+pipenv==2023.11.15
+platformdirs==4.1.0
+pluggy==1.4.0
+pytest==8.0.2
+pytest-json-report==1.5.0
+pytest-metadata==3.1.1
+tomli==2.0.1
+virtualenv==20.25.0
