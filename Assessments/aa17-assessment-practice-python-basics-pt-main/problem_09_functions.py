@@ -127,11 +127,19 @@ class PizzaProcessor:
             return self._error
 
     def pizza_production(self, **kwargs):
-        self._time_started = kwargs['time_started']
-        self._time_ended = kwargs['time_ended']
-        self._employee_name = kwargs['employee_name']
+        if len(kwargs) == 0:
+            self._time_started = None
+            self._time_ended = None
+            self._employee_name = None
+        elif
+        else:
+            self._time_started = kwargs['time_started']
+            self._time_ended = kwargs['time_ended']
+            self._employee_name = kwargs['employee_name']
 
-        
+        self._pizzas_made += 1
+
+        return f"{self._employee_name} started making pizza at {self._time_started} and ended at {self._time_ended}."
 
 # __________SAMPLE TEST DATA__________ #
 # pizza_processor = PizzaProcessor()
