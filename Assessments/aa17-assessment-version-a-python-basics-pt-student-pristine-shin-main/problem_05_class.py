@@ -16,7 +16,27 @@
 # Test data at the bottom.
 
 # WRITE YOUR CODE HERE
-# Your code here 
+# Your code here
+class OneTitleLibrary:
+  def __init__(self, name, totalCopies):
+    self._name = name
+    self._totalCopies = totalCopies
+    self._currCopies = totalCopies
+
+  def checkout_copy(self):
+    if self._currCopies > 0:
+      self._currCopies -= 1
+    else:
+      return f'Cannot have # of copies < 0'
+
+  def return_copy(self):
+    if self._currCopies < self._totalCopies:
+      self._currCopies += 1
+    else:
+      return f'Cannot have # of copies > {self._totalCopies} because {self._totalCopies} was passed into the constructor'
+
+  def __repr__(self):
+    return f"<{self._name} ({self._currCopies})>"
 
 
 # Test calls

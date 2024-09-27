@@ -8,4 +8,13 @@
 # an empty constructor. It can be an empty class.
 
 # WRITE YOUR CODE HERE
-# Your code here 
+# Your code here
+class Light:
+  def my_method(self):
+    print("Hello from the Light class.")
+
+class LED(Light):
+  def __init__(self):
+    super().__init__()
+  def my_method(self):
+    print("Hello from the LED child class.")

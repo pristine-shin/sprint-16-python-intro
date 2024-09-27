@@ -25,7 +25,18 @@
 # There are seven sample data calls for you to use.
 
 # WRITE YOUR FUNCTION HERE
-# Your code here 
+# Your code here
+def simple_german_translator(string):
+  if string == "Guten, Tag" or string == "Hallo":
+    return "Hello"
+  elif string == "Tschuss" or string == "Auf wiedersehen":
+    return "Bye"
+  elif string == "Ich liebe dich":
+    return "I love you"
+  elif string == "Wo sind Sie":
+    return "Where are you"
+  else:
+    return None
 
 # TEST DATA
 print(simple_german_translator("Guten, Tag"))       # > "Hello"

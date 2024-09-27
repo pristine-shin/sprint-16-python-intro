@@ -10,7 +10,19 @@
 # Test data is below.
 
 # WRITE YOUR CODE HERE
-# Your code here 
+# Your code here
+class ValueHolder:
+  def __init__(self, value):
+    self._value = value
+
+  @property
+  def value(self):
+    return self._value
+
+  @value.setter
+  def value(self, v):
+    if v is not None:
+      self._value = v
 
 # Test data
 o = ValueHolder("boop")

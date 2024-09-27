@@ -10,7 +10,13 @@
 # There are two sample data calls for you to use.
 
 # WRITE YOUR FUNCTION HERE
-# Your code here 
+# Your code here
+def my_for_map(lst):
+  result = []
+  for word in lst:
+    result.append(word.upper())
+
+  return result
 
 # TEST DATA
 test = ["plop", "", "drop", "zop", "stop"]

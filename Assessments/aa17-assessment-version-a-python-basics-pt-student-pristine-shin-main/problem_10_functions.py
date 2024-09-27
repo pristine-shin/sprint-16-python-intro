@@ -25,7 +25,14 @@
 # More examples below.
 
 # WRITE YOUR CODE HERE
-# Your code here 
+# Your code here
+def none_check(function):
+    def newFunction(x):
+        if x is None:
+            return None
+        else:
+            return function(x)
+    return newFunction
 
 # Example calls
 def hello(name):

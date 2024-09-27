@@ -11,7 +11,9 @@
 # There are two sample data calls for you to use.
 
 # WRITE YOUR FUNCTION HERE
-# Your code here 
+# Your code here
+def my_comprehension(lst):
+  return [word.upper() for word in lst]
 
 # TEST DATA
 test = ["plop", "", "drop", "zop", "stop"]

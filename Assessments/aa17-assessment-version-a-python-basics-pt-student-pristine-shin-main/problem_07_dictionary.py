@@ -8,7 +8,9 @@
 # Test data follows.
 
 # WRITE YOUR CODE HERE
-# Your code here 
+# Your code here
+def my_filter(dictionary):
+  return {k:v for k, v in dictionary.items() if len(v) <= 3}
 
 # TEST DATA
 print(my_filter({1: ".", 2: "..", 5: "....."}))   # > {1: ".", 2: ".."}

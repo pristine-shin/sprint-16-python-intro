@@ -11,7 +11,14 @@
 
 # WRITE YOUR FUNCTION HERE
 
-# Your code here 
+# Your code here
+def my_while_map(lst):
+  idx = 0
+  result = []
+  while idx < len(lst):
+    result.append(lst[idx].upper())
+    idx += 1
+  return result
 
 # TEST DATA
 
